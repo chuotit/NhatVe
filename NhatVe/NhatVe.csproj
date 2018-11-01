@@ -11,4 +11,12 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.5" PrivateAssets="All" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\NhatVe.Application\NhatVe.Application.csproj" />
+    <ProjectReference Include="..\NhatVe.Data.EF\NhatVe.Data.EF.csproj" />
+    <ProjectReference Include="..\NhatVe.Data\NhatVe.Data.csproj" />
+    <ProjectReference Include="..\NhatVe.Infrastructure\NhatVe.Infrastructure.csproj" />
+    <ProjectReference Include="..\NhatVe.Utilities\NhatVe.Utilities.csproj" />
+  </ItemGroup>
+
 </Project>
