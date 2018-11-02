@@ -2749,7 +2749,7 @@ namespace NhatVe.Controllers
             var items = new List<object>();
             foreach (var item in listAir)
             {
-                var itemNode = item.SelectSingleNode("//div[@class='bpv-list-item clearfix']"); // đang sai chỗ này
+                var itemNode = item;
                 var id = itemNode.Attributes["id"].Value;
                 var departprice = itemNode.Attributes["departprice"].Value;
                 var departairline = itemNode.Attributes["departairline"].Value;
