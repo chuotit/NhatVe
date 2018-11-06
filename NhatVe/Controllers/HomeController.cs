@@ -37,19 +37,40 @@ namespace NhatVe.Controllers
             //    Console.Write("Error");
 
             //=========================================
+            // Search ticket
+            //var httpWebRequest = (HttpWebRequest)WebRequest.Create("https://ssl.12bay.vn/api/v1/VN/iSearch/SGN/HAN");
+            //httpWebRequest.ContentType = "application/json";
+            //httpWebRequest.Method = "POST";
 
-            var httpWebRequest = (HttpWebRequest)WebRequest.Create("https://ssl.12bay.vn/api/v1/VN/iSearch/SGN/HAN");
+            //using (var streamWriter = new StreamWriter(httpWebRequest.GetRequestStream()))
+            //{
+            //    string json = "{\"departureDate\":\"2018-11-08\"," +
+            //        "\"returnDate\":\"2018-11-11\"," +
+            //        "\"adultCount\":1," +
+            //        "\"childCount\":0," +
+            //        "\"infantCount\":0," +
+            //        "\"isRoundTrip\":false}";
+
+            //    streamWriter.Write(json);
+            //    streamWriter.Flush();
+            //    streamWriter.Close();
+            //}
+
+            //var httpResponse = (HttpWebResponse)httpWebRequest.GetResponse();
+            //using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
+            //{
+            //    var result = streamReader.ReadToEnd();
+            //}
+
+            //=========================================
+            // Search pricesBoardOfWeek
+            var httpWebRequest = (HttpWebRequest)WebRequest.Create("https://ssl.12bay.vn/api/v1/AirLines/PricesBoard/Week");
             httpWebRequest.ContentType = "application/json";
             httpWebRequest.Method = "POST";
 
             using (var streamWriter = new StreamWriter(httpWebRequest.GetRequestStream()))
             {
-                string json = "{\"departureDate\":\"2018-11-08\"," +
-                    "\"returnDate\":\"2018-11-11\"," +
-                    "\"adultCount\":1," +
-                    "\"childCount\":0," +
-                    "\"infantCount\":0," +
-                    "\"isRoundTrip\":false}";
+                string json = "{\"departureDate\":\"2018-11-08\",\"returnDate\":\"2018-11-11\",\"isRoundTrip\":false,\"source\":\"WEB\",\"originCode\":\"SGN\",\"destinationCode\":\"HAN\"}";
 
                 streamWriter.Write(json);
                 streamWriter.Flush();
