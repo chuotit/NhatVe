@@ -3,17 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2046
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NhatVe", "NhatVe\NhatVe.csproj", "{CA119F96-CCCE-4288-B189-344D6F5485D3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NhatVe", "NhatVe\NhatVe.csproj", "{CA119F96-CCCE-4288-B189-344D6F5485D3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NhatVe.Infrastructure", "NhatVe.Infrastructure\NhatVe.Infrastructure.csproj", "{49E96F99-599A-46BC-96D4-2CC0E73E5373}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NhatVe.Infrastructure", "NhatVe.Infrastructure\NhatVe.Infrastructure.csproj", "{49E96F99-599A-46BC-96D4-2CC0E73E5373}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NhatVe.Utilities", "NhatVe.Utilities\NhatVe.Utilities.csproj", "{51CE8331-14C6-4DA8-BF37-ED274038B6C0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NhatVe.Utilities", "NhatVe.Utilities\NhatVe.Utilities.csproj", "{51CE8331-14C6-4DA8-BF37-ED274038B6C0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NhatVe.Data.EF", "NhatVe.Data.EF\NhatVe.Data.EF.csproj", "{81A3D16E-F4B1-40F8-AA2F-9A1809D7F91A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NhatVe.Data.EF", "NhatVe.Data.EF\NhatVe.Data.EF.csproj", "{81A3D16E-F4B1-40F8-AA2F-9A1809D7F91A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NhatVe.Data", "NhatVe.Data\NhatVe.Data.csproj", "{5FE2D223-239E-4840-AA52-9042EDA83842}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NhatVe.Data", "NhatVe.Data\NhatVe.Data.csproj", "{5FE2D223-239E-4840-AA52-9042EDA83842}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NhatVe.Application", "NhatVe.Application\NhatVe.Application.csproj", "{BF74D6DA-9EA3-4FDB-A9DA-28F29D319D5F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NhatVe.Application", "NhatVe.Application\NhatVe.Application.csproj", "{BF74D6DA-9EA3-4FDB-A9DA-28F29D319D5F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Presentation", "1 - Presentation", "{47D7A2E4-19FE-4BBE-B070-BCB1AC72D284}"
 EndProject
