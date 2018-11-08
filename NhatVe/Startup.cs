@@ -45,11 +45,16 @@ namespace NhatVe
                 .AddEntityFrameworkStores<AppDbContext>()
                 .AddDefaultTokenProviders();
 
+
+            services.AddScoped<UserManager<AppUser>,UserManager<AppUser>>();
+            services.AddScoped<RoleManager<AppRole>,RoleManager<AppRole>>();
+            services.AddTransient<DbInitializer>();
+
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, DbInitializer dbInitializer)
         {
             if (env.IsDevelopment())
             {
@@ -74,6 +79,8 @@ namespace NhatVe
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
+
+            dbInitializer.Seed().Wait();
         }
     }
 }
