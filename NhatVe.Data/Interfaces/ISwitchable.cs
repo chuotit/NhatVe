@@ -1,6 +1,6 @@
-﻿using NhatVe.Infrastructure.Enums;
+﻿using NhatVe.Data.Enums;
 
-namespace NhatVe.Infrastructure.Interfaces
+namespace NhatVe.Data.Interfaces
 {
     public interface ISwitchable
     {

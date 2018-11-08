@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace NhatVe.Infrastructure.Interfaces
+namespace NhatVe.Data.Interfaces
 {
-    public interface IDataTracking
+    public interface IDateTracking
     {
         DateTime DateCreated { set; get; }
         DateTime DateModified { get; set; }

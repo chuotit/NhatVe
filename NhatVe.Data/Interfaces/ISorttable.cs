@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace NhatVe.Infrastructure.Interfaces
+namespace NhatVe.Data.Interfaces
 {
      public interface ISorttable
     {

@@ -1,4 +1,4 @@
-﻿namespace NhatVe.Infrastructure.Enums
+﻿namespace NhatVe.Data.Enums
 {
     public enum Status
     {

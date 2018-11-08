@@ -1,4 +1,4 @@
-﻿namespace NhatVe.Infrastructure.Interfaces
+﻿namespace NhatVe.Data.Interfaces
 {
     public interface IHasSeoMetaData
     {
