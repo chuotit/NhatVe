@@ -14,8 +14,8 @@ namespace NhatVe.Data.Entities
         public string Name { get; set; }
         public string ShortName { get; set; }
         public string City { get; set; }
-        public string Lat { get; set; }
-        public string Lng { get; set; }
+        public double Lat { get; set; }
+        public double Lng { get; set; }
         public string Thumbnail { get; set; }
 
         public bool IsDeleted { get; set; }
