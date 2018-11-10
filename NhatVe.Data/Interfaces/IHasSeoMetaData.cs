@@ -4,7 +4,7 @@
     {
         string SeoPageTitle { get; set; }
         string SeoAlias { get; set; }
-        string SeoKeywork { set; get; }
+        string SeoKeyworks { set; get; }
         string SeoDescription { set; get; }
     }
 }

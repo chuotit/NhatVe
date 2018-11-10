@@ -14,6 +14,11 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using NhatVe.Data.EF;
 using NhatVe.Data.Entities;
+using AutoMapper;
+using NhatVe.Data.EF.Repositories;
+using NhatVe.Data.IRepositories;
+using NhatVe.Application.Interfaces;
+using NhatVe.Application.Implementations;
 
 namespace NhatVe
 {
@@ -48,7 +53,14 @@ namespace NhatVe
 
             services.AddScoped<UserManager<AppUser>,UserManager<AppUser>>();
             services.AddScoped<RoleManager<AppRole>,RoleManager<AppRole>>();
+
+            services.AddSingleton(Mapper.Configuration);
+            services.AddScoped<IMapper>(sp => new Mapper(sp.GetRequiredService<AutoMapper.IConfigurationProvider>(), sp.GetService));
+
             services.AddTransient<DbInitializer>();
+
+            services.AddTransient<IAirPortRepository, AirPortRepository>();
+            services.AddTransient<IAirPortService, AirPortService>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
