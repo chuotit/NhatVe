@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using NhatVe.Data.EF;
 
 namespace NhatVe
 {
@@ -14,7 +16,21 @@ namespace NhatVe
     {
         public static void Main(string[] args)
         {
-            CreateWebHostBuilder(args).Build().Run();
+            var host = CreateWebHostBuilder(args).Build();
+            using(var scop = host.Services.CreateScope())
+            {
+                var services = scop.ServiceProvider;
+                try
+                {
+                    var dbInitializer = services.GetService<DbInitializer>();
+                    dbInitializer.Seed().Wait();
+                } catch(Exception ex)
+                {
+                    var logger = services.GetService<ILogger<Program>>();
+                    logger.LogError(ex, "An error occrrued while seeding the database.");
+                }
+            }
+            host.Run();
         }
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
