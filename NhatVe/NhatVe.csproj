@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="compilerconfig.json" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="AutoMapper" Version="7.0.1" />
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="3.1.0" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
@@ -20,6 +24,14 @@
     <ProjectReference Include="..\NhatVe.Data\NhatVe.Data.csproj" />
     <ProjectReference Include="..\NhatVe.Infrastructure\NhatVe.Infrastructure.csproj" />
     <ProjectReference Include="..\NhatVe.Utilities\NhatVe.Utilities.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\lib\font-awesome\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="compilerconfig.json" />
   </ItemGroup>
 
 </Project>
