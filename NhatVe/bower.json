@@ -1,9 +1,5 @@
 {
   "name": "asp.net",
   "private": true,
-  "dependencies": {
-    "Font-Awesome": "5.5.0",
-    "bootstrap-sass": "v3.3.7",
-    "gentelella": "1.4.0"
-  }
+  "dependencies": {}
 }
