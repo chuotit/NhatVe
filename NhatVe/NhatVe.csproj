@@ -27,6 +27,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="wwwroot\css\layouts\" />
     <Folder Include="wwwroot\lib\font-awesome\" />
   </ItemGroup>
 

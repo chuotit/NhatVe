@@ -35,6 +35,14 @@ a {
 	}
 }
 
+.img-responsive {
+    @include img-responsive();
+}
+
+.clear {
+    clear: both;
+}
+
 body {
 	font-family: $font-family-base;
 	font-size: $font-size-base;
@@ -50,9 +58,6 @@ body {
 .sidebar-menu .treeview-menu {
     display: block !important;
 }
-.clear {
-    clear: both;
-}
 
 .float-left {
 	float: left;
@@ -64,10 +69,6 @@ body {
 
 .no-padding {
 	padding: 0 !important;
-}
-
-.img-responsive {
-	@include img-responsive();
 }
 
 .item-relative {
@@ -158,8 +159,4 @@ body {
 .row-padding-30 [class*="col-"] {
 	padding-left: 15px !important;
 	padding-right: 15px !important;
-}
-
-.box-controlls {
-    margin: 15px 0;
 }

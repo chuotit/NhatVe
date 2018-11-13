@@ -1,4 +1,6 @@
-/*@import url('https://fonts.googleapis.com/css?family=Roboto');*/
+
+$bootstrap-sass-asset-helper: true;
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 $font-family: 'Roboto', sans-serif;
 $font-size: 14px;
 // Color
@@ -28,6 +30,12 @@ $font-family-base: $font-family;
 // Set color for text page
 $text-color-base: $gray-dark;
 $line-height-base: 1.428571429; // 20/14
+
+$left-content-width: 360px;
+$left-content-background: $white-color;
+$left-content-border: 1px solid $gray;
+$main-content-background: $white-color;
+
 
 // Set font size for base, large, small and h1 to h6 for page
 $font-size-base: $font-size;

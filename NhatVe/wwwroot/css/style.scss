@@ -16,3 +16,11 @@
 // @import 'components/account';
 
 @import 'common';
+
+.left-content {
+    float: left;
+    min-width: $left-content-width;
+    background: $left-content-background;
+    border-right: $left-content-border;
+    height: 100vh;
+}
